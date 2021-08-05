@@ -1,0 +1,86 @@
+.header{
+    height: 40px;
+    background-color: aqua;
+    width: auto;
+    position: fixed;  
+}
+.logo{
+    float: left;
+    width: 30%;
+    height: max-content;
+}
+.navbarao{
+    float:  right;
+    width: 70%;
+    height: max-content;
+    
+
+}
+.footer{
+    background-color:black;
+    clear: both;
+    height: auto;
+
+}
+.f1{
+    margin-left: 12%;
+    width: 60%;
+    height: 100%;
+}
+.f2{
+    background-color: aliceblue;
+    margin-left: 20%;
+    width: 200px;
+    height: 100%;
+}
+.contener{
+    height: 1080px; /* Độ dài content bài chỉnh ở đây*/
+}
+
+.content{
+    float: left;
+    width: 85%;
+    height: inherit;
+    background-color: sienna;
+    background: url('b.jpg');
+
+}
+.sidebar{
+    width: 18%;
+    right: 0px;
+    height: 100%;
+    position: fixed;
+  
+
+}
+.in1{
+    width: 60%;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 350px;
+}
+.in2{
+    width: 10%;
+    height: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+}
+
+.in3{
+    width: 60%;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+}
+body {
+   background: #fff;
+   color: 333;
+}
+@media all and (max-width: 320px) {
+   body {
+      background: #e7e7e7;
+   }
+}

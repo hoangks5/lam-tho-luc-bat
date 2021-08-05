@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,height=device-height initial-scale=1.0">
+    <title>AI Làm Thơ Lục Bát</title>
+    <link href="{{ url_for('static',filename='css/style.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static',filename='css/bootstrap/css/bootstrap.css') }}" rel="stylesheet">
+
+</head>
+<body>
+    
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="http://itsoeazy.xyz/">
+                <img src="{{url_for('static',filename='/images/0.png')}}" alt="" width="30" height="24" class="d-inline-block align-text-top">
+                <strong><span style="font-size: 22px"><span style="font-family:monospace"><span style="color: white;">HOÀNG NGUYỄN</span></span></span></strong>
+              </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+             
+              
+
+
+
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+     
+
+
+
+      <div class="sidebar">
+        <div style="background-image: url('{{url_for('static',filename='/images/ai1.gif')}}'); background-repeat: no-repeat; height: 100%; width: 100%;"></div>
+      </div>
+
+
+    <div class="contener">
+        <div class="content">
+          <form method="POST" action="/lamthov1" />
+          <div class="in1">
+            <input class="form-control form-control-lg" name="inputdt" type="text" placeholder="Nhâp một câu thơ vào đây..." aria-label=".form-control-lg example">
+          </div>
+          <div class="in2">
+            <button type="submit" class="btn btn-outline-success">Bấm vào đây</button>
+          </div>
+        <div class="in3">
+          {% if inp %}
+          <input class="form-control form-control-lg" name="outputdt" type="text" placeholder="{{ inp }}" aria-label="readonly input example" readonly>
+          {% else %}
+          <input class="form-control form-control-lg" name="outputdt" type="text" placeholder="" aria-label="readonly input example" readonly>
+          {% endif %}
+        </div>
+      </form>
+        </div>
+
+
+
+
+      </div>
+
+
+
+    
+    </div>
+
+    <div class="footer">
+      <div class="f1">
+        <br><br>
+        <strong><span style="font-size: 32px"><span style="font-family:monospace"><span style="color: white;">Website được xây dựng trên framework Flask của Python</span></span></span></strong><br> <br>
+      </div>
+
+
+    </div>
+
+
+</body>
+</html>
